@@ -1,22 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0ig-0H-5lt">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <scene sceneID="5">
+        <scene sceneID="sGx-XE-c7d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiK-Rw-TZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="KYV-RH-Yga" userLabel="FirstPushScene" customClass="PushCountingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9f1-ol-0xc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6EN-J2-CPL">
+                                <rect key="frame" x="123" y="239" width="75" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Push It">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCount:" destination="KYV-RH-Yga" eventType="touchUpInside" id="jwe-mA-l2P"/>
+                                    <segue destination="Ml5-gs-vKI" kind="push" id="lMK-Az-HTt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="YEAH YOU CAN PUSH IT" lineBreakMode="tailTruncation" minimumFontSize="10" id="Xe8-SU-AaQ">
+                                <rect key="frame" x="60" y="45" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="8em-R0-viR">
+                                <rect key="frame" x="120" y="116" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="pp4-ag-PCj"/>
+                    <connections>
+                        <outlet property="countLabel" destination="8em-R0-viR" id="NoD-Se-KGi"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="682" y="179"/>
+        </scene>
+        <scene sceneID="NeQ-Ra-W19">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPB-3F-qDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Ml5-gs-vKI" userLabel="SecondPushScene" customClass="PushCountingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F5s-vG-Ehj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pv7-JP-0yl">
+                                <rect key="frame" x="101" y="236" width="120" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Push It Again">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCount:" destination="Ml5-gs-vKI" eventType="touchUpInside" id="aoQ-Jk-jQK"/>
+                                    <segue destination="2PN-Fk-KZw" kind="push" id="yFP-0K-OWw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="YEAH YOU CAN PUSH IT" lineBreakMode="tailTruncation" minimumFontSize="10" id="pVJ-rz-urB">
+                                <rect key="frame" x="60" y="45" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="VXa-fg-l72">
+                                <rect key="frame" x="120" y="116" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GVE-iI-qRz"/>
+                    <connections>
+                        <outlet property="countLabel" destination="VXa-fg-l72" id="35Q-Le-iIv"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1085" y="179"/>
+        </scene>
+        <scene sceneID="I9S-pP-mLD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGm-pu-lLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2PN-Fk-KZw" userLabel="ThirdPushScene" customClass="PushCountingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S5y-TJ-yq5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No, no more pushing." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="b2P-40-a5s">
+                                <rect key="frame" x="60" y="46" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="0Lc-fK-l5t">
+                                <rect key="frame" x="120" y="117" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E4k-JV-cl9"/>
+                    <connections>
+                        <outlet property="countLabel" destination="0Lc-fK-l5t" id="WkT-7U-bUg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1488" y="179"/>
+        </scene>
+        <scene sceneID="6zd-7a-Hqp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UY1-F7-8cV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="0ig-0H-5lt" customClass="CountingNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="aGt-XS-ddr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KYV-RH-Yga" kind="relationship" relationship="rootViewController" id="Anr-6B-mCb"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="148" y="179"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

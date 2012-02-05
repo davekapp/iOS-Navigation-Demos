@@ -15,12 +15,15 @@
 		4ED2552614DE4A650089C9FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2552514DE4A650089C9FD /* AppDelegate.m */; };
 		4ED2552914DE4A650089C9FD /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2552714DE4A650089C9FD /* MainStoryboard_iPhone.storyboard */; };
 		4ED2552C14DE4A650089C9FD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2552A14DE4A650089C9FD /* MainStoryboard_iPad.storyboard */; };
-		4ED2552F14DE4A650089C9FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2552E14DE4A650089C9FD /* ViewController.m */; };
 		4ED2553714DE4A650089C9FD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2553614DE4A650089C9FD /* SenTestingKit.framework */; };
 		4ED2553814DE4A650089C9FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2551514DE4A650089C9FD /* UIKit.framework */; };
 		4ED2553914DE4A650089C9FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2551714DE4A650089C9FD /* Foundation.framework */; };
 		4ED2554114DE4A650089C9FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2553F14DE4A650089C9FD /* InfoPlist.strings */; };
 		4ED2554414DE4A650089C9FD /* NavigationFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2554314DE4A650089C9FD /* NavigationFunTests.m */; };
+		4ED2554F14DE4B630089C9FD /* CountingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2554E14DE4B630089C9FD /* CountingNavigationController.m */; };
+		4ED2555214DE4B910089C9FD /* PushCountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2555114DE4B910089C9FD /* PushCountingViewController.m */; };
+		4ED2555514DE54BF0089C9FD /* CountingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2555414DE54BF0089C9FD /* CountingTabBarController.m */; };
+		4ED2555814DE54D70089C9FD /* TapCountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2555714DE54D70089C9FD /* TapCountingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +41,28 @@
 		4ED2551514DE4A650089C9FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4ED2551714DE4A650089C9FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ED2551914DE4A650089C9FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4ED2551D14DE4A650089C9FD /* NavigationFun-Info.plist */ = {isa = PBXFileReference; path = "NavigationFun-Info.plist"; sourceTree = "<group>"; };
+		4ED2551D14DE4A650089C9FD /* NavigationFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationFun-Info.plist"; sourceTree = "<group>"; };
 		4ED2551F14DE4A650089C9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4ED2552114DE4A650089C9FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4ED2552314DE4A650089C9FD /* NavigationFun-Prefix.pch */ = {isa = PBXFileReference; path = "NavigationFun-Prefix.pch"; sourceTree = "<group>"; };
-		4ED2552414DE4A650089C9FD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4ED2552314DE4A650089C9FD /* NavigationFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavigationFun-Prefix.pch"; sourceTree = "<group>"; };
+		4ED2552414DE4A650089C9FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4ED2552514DE4A650089C9FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4ED2552814DE4A650089C9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4ED2552B14DE4A650089C9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4ED2552D14DE4A650089C9FD /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		4ED2552E14DE4A650089C9FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4ED2553514DE4A650089C9FD /* NavigationFunTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationFunTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED2553614DE4A650089C9FD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4ED2553E14DE4A650089C9FD /* NavigationFunTests-Info.plist */ = {isa = PBXFileReference; path = "NavigationFunTests-Info.plist"; sourceTree = "<group>"; };
+		4ED2553E14DE4A650089C9FD /* NavigationFunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationFunTests-Info.plist"; sourceTree = "<group>"; };
 		4ED2554014DE4A650089C9FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4ED2554214DE4A650089C9FD /* NavigationFunTests.h */ = {isa = PBXFileReference; path = NavigationFunTests.h; sourceTree = "<group>"; };
+		4ED2554214DE4A650089C9FD /* NavigationFunTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationFunTests.h; sourceTree = "<group>"; };
 		4ED2554314DE4A650089C9FD /* NavigationFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationFunTests.m; sourceTree = "<group>"; };
+		4ED2554D14DE4B630089C9FD /* CountingNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountingNavigationController.h; sourceTree = "<group>"; };
+		4ED2554E14DE4B630089C9FD /* CountingNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountingNavigationController.m; sourceTree = "<group>"; };
+		4ED2555014DE4B910089C9FD /* PushCountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushCountingViewController.h; sourceTree = "<group>"; };
+		4ED2555114DE4B910089C9FD /* PushCountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushCountingViewController.m; sourceTree = "<group>"; };
+		4ED2555314DE54BF0089C9FD /* CountingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountingTabBarController.h; sourceTree = "<group>"; };
+		4ED2555414DE54BF0089C9FD /* CountingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountingTabBarController.m; sourceTree = "<group>"; };
+		4ED2555614DE54D70089C9FD /* TapCountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapCountingViewController.h; sourceTree = "<group>"; };
+		4ED2555714DE54D70089C9FD /* TapCountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapCountingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +122,18 @@
 		4ED2551B14DE4A650089C9FD /* NavigationFun */ = {
 			isa = PBXGroup;
 			children = (
+				4ED2554D14DE4B630089C9FD /* CountingNavigationController.h */,
+				4ED2554E14DE4B630089C9FD /* CountingNavigationController.m */,
+				4ED2555014DE4B910089C9FD /* PushCountingViewController.h */,
+				4ED2555114DE4B910089C9FD /* PushCountingViewController.m */,
 				4ED2552414DE4A650089C9FD /* AppDelegate.h */,
 				4ED2552514DE4A650089C9FD /* AppDelegate.m */,
 				4ED2552714DE4A650089C9FD /* MainStoryboard_iPhone.storyboard */,
 				4ED2552A14DE4A650089C9FD /* MainStoryboard_iPad.storyboard */,
-				4ED2552D14DE4A650089C9FD /* ViewController.h */,
-				4ED2552E14DE4A650089C9FD /* ViewController.m */,
+				4ED2555314DE54BF0089C9FD /* CountingTabBarController.h */,
+				4ED2555414DE54BF0089C9FD /* CountingTabBarController.m */,
+				4ED2555614DE54D70089C9FD /* TapCountingViewController.h */,
+				4ED2555714DE54D70089C9FD /* TapCountingViewController.m */,
 				4ED2551C14DE4A650089C9FD /* Supporting Files */,
 			);
 			path = NavigationFun;
@@ -263,7 +278,10 @@
 			files = (
 				4ED2552214DE4A650089C9FD /* main.m in Sources */,
 				4ED2552614DE4A650089C9FD /* AppDelegate.m in Sources */,
-				4ED2552F14DE4A650089C9FD /* ViewController.m in Sources */,
+				4ED2554F14DE4B630089C9FD /* CountingNavigationController.m in Sources */,
+				4ED2555214DE4B910089C9FD /* PushCountingViewController.m in Sources */,
+				4ED2555514DE54BF0089C9FD /* CountingTabBarController.m in Sources */,
+				4ED2555814DE54D70089C9FD /* TapCountingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

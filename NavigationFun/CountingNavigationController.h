@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CountingNavigationController.h
 //  NavigationFun
 //
 //  Created by David Kapp on 2/4/12.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CountingNavigationController : UINavigationController
+@property (nonatomic) int pushCount;
 
 @end
